@@ -2,9 +2,9 @@ stoveml
 
 Uses a custom ML model to determine whether or not a stove is on, based on training data from a camera pointing at the stove, then sends that state to Home Assistant via the hassAPI.
 
-Training data is in training_data folder. Model can be trained at https://colab.research.google.com/drive/1oVGmJN9rRYyOdY2_zntwW3LOtpqRdWra
+Training data is in training_data folder. Model can be trained at https://colab.research.google.com/drive/1oVGmJN9rRYyOdY2_zntwW3LOtpqRdWra using FastAI, which uses PyTorch under the hood and saves the model as a .pkl file in your Google drive.
 
-This code runs the inference based on the exported model file at model.pkl.
+This code in this repo an inference server based on the exported model file at model.pkl.
 
 Instructions to run the inference service:
 - Update the values in config.json to point to your camera stream and Home Assiant config
